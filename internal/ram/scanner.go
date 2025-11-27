@@ -1,3 +1,11 @@
+// Package ram provides filesystem scanning for the Claude Code RAM directory.
+//
+// RAM (Random Access Memory) is where identities persist their work as markdown files
+// in ~/.claude/ram/{identity}/. This package scans those directories and returns
+// structured data about all .md files found.
+//
+// The scanner walks identity subdirectories (one level deep) and reads all markdown
+// files, returning File structs that contain path, identity, name, and content.
 package ram
 
 import (

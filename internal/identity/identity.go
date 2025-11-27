@@ -1,3 +1,10 @@
+// Package identity provides identity validation and RAM path resolution
+// for the Claude Code identity system.
+//
+// The identity system defines 29 specialized roles (Neo, Smith, Trinity, etc.),
+// each with their own working directory under ~/.claude/ram/{identity}/.
+//
+// This package validates identity names and resolves their RAM directory paths.
 package identity
 
 import (

@@ -1,3 +1,13 @@
+// Package output provides ANSI color-coded terminal output utilities.
+//
+// Supports colored headers, labeled items, and success messages with automatic
+// color disabling via the NoColor flag. All output goes to stdout.
+//
+// Example:
+//
+//	output.Header("Processing files")
+//	output.Item("Status", "complete")
+//	output.Success("All done!")
 package output
 
 import "fmt"
@@ -7,6 +17,8 @@ const (
 	Green  = "\033[32m"
 	Cyan   = "\033[36m"
 	Yellow = "\033[33m"
+	Red    = "\033[31m"
+	Dim    = "\033[2m"
 	Reset  = "\033[0m"
 )
 
